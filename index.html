@@ -1,85 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
 	<meta charset="utf-8">
-	<title>Práctica 01 CSS3</title>
+	<title>Práctica 02 CSS3</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
 
 	<header>
-		<img src="img/resplandor.png" alt="">
-		<img src="img/logo.png" id="logo" alt="">
-
+		<img src="img/banner.png">
+		<img src="img/granthams.png" id="granthams">
+		<img src="img/paint.png" id="paint">
+		<input type="search" placeholder="Search" name="">
 		<nav>
 			<ul>
-				<li>Inicio</li>
-				<li>Sección</li>
-				<li>Seccion</li>
-				<li>Seccion</li>
-				<li>Seccion</li>
-				<li>Seccion</li>
+				<li>Print</li>
+				<li>Copy</li>
+				<li>Finishing</li>
+				<li>Design</li>
+				<li>Exhibition</li>
 			</ul>
-
-			<form action="#">
-				<input type="search" placeholder="Buscar aqui...." name="">
-				<input type="button" value="Buscar" name="">
-			</form>
 		</nav>
 	</header>
 
-	<section id="Seccion01">
+	<section id="primerseccion">
+		<article id="secc01art01">
+			<img src="img/slide.jpg">
+		</article>
+
+		<article id="secc01art02">
+			<span class="colorrosa letragrande nito">We can offer...</span>
+			<ul>
+				<li>Highly Competitive Prices</li>
+				<li>Variable Data</li>
+				<li>Fast turnaround</li>
+				<li>Rapid Re-order Service</li>
+				<li>Wide Product Range</li>
+				<li>Low Cost Delivery</li>
+				<li>Monthly Offers</li>
+				<li>Great Customer Servicio</li>
+			</ul>
+		</article>
+		<img src="img/bg_offer.png" id="bgoffer">
+	</section>
+
+	<section id="segundaseccion">
 		<article>
-			<img src="img/slide2.jpg" alt="">
+			<span class="colorrosa letramediana nito">
+				01772 250207
+			</span>
 		</article>
 	</section>
 
-	<section id="Seccion02">
+	<section id="terceraseccion">
 		<article>
-			<img src="img/separador.jpg">
+			<img src="img/cerdito.png">
+			<span class="colorrosa letracomun nito">Save this Spring</span>
 			<br>
-			<span class="unaSeccion">Una Sección</span> 
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			<p></p>
-			<input type="submit" value="Ver más" name="">
+			Fabulous discount on canvas's and roll up's as well as many other offers.
+			<span class="colorrosa nito">Find out more...</span>
 		</article>
 
-		<article>
-			<img src="img/separador.jpg">
-			<br>
-			<span class="otraSeccion">Otra sección</span> 
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			<p></p>
-			<input type="submit" value="Ver más" name="">
-		</article>
 
 		<article>
-			<img src="img/separador.jpg">
+			<img src="img/hoja.png">
+			<span class="colorverde letracomun nito">ECO Friendly</span>
 			<br>
-			<span class="otraSeccion">Un vídeo</span> 
-			<br>
-			<img src="img/video.jpg">
+			ECO Friendly Materials used in our production process. <br>
+			Reclycled papers and paper from Sustaintable Forests (including FSC papers) are available across our range of Printing Services.
 		</article>
 
+
+		<article>
+			<img src="img/new.png">
+			<span class="colorazul letracomun nito">Upload your file</span>
+			<br>
+			Making it easy to order your printing today. our upload facility enables you to send your files directly to us. Use the notes section to inform us of your order, then sit back and wait for a member of our team to contact you.
+			<br>
+			<span class="colorazul">Upload Your File Now...</span> 
+		</article>
+
+
+		<article>
+			<span class="colorrosa letramediana">Stay in touch</span>
+			<br>
+			Join our mailling list today
+			<br>
+			<input type="email" placeholder="Email goes here" name="">
+			<input type="button" value="send" name="">
+		</article>
 	</section>
 
 </body>
