@@ -73,9 +73,42 @@ header nav ul li{
 	padding-right: 122px;
 }
 
+#terceraseccion article{
+	display: inline-block;
+	margin-right: 4px;
+	vertical-align: top;
+	width: 23%;
+}
+
+#terceraseccion article img{
+	/*Alineacion vertical de la imagen....... Mueve es texto que esta alrededor*/
+
+	vertical-align: middle;
+}
+
+#terceraseccion article input{
+	border-radius: 5px;
+}
+
+#terceraseccion article input[type="button"]{
+	background: #a4cd33;
+	color: white;
+}
+
+/*imgr.co*/ 
+
+.colorazul{
+	color: #629ad4;
+}
+
 .colorrosa{
 	color: #FF0099;
 }
+
+.colorverde{
+	color: #8bc500;
+}
+
 
 .letramediana{
 	font-size: 2em;
