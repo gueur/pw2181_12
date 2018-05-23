@@ -2,7 +2,7 @@ var inicioApp = function(){
 	var Aceptar = function(){
 		var usuario=$("#txtUsuario").val();
 		var clave=$("#txtContra").val();
-		var parametros ="opc=validaentrada"+"&usuario= "+usuario+"&clave= "+clave+"&aleatorio="+Math.random();
+		var parametros ="opc=validaentrada"+"&usuario="+usuario+"&clave="+clave+"&aleatorio="+Math.random();
 
 		$.ajax({
 			cache:false,
