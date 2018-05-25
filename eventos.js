@@ -76,9 +76,10 @@ var buscarUsuario=function(){
 			data: parametros,
 			success: function(response){
 				if(response.respuesta == true){
-					
+					alert("Datos guardados correctamente");
+					$("#frmUsuarios > input").val("");
 				}else{
-					$("#txtNombre").focus();
+					alert("Ocurrio un problema, intente de nuevo mas tarde");
 				}
 			},
 			error: function(xhr,ajaxOptions,thrownError){
