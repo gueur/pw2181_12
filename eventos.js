@@ -90,9 +90,35 @@ var buscarUsuario=function(){
 			alert("Llene todos los campos");
 		}
 	}
+
+	var Listado = function(){
+		$("main > section").hide("slow");
+		$("#frmListado").show("slow");
+		var parametros = "opc=listado"+
+						 "&aleatorio="+Math.random();
+		$.ajax({
+			cache:false,
+			type: "POST",
+			dataType: "json",
+			url:"php/listado.php",
+			data: parametros,
+			success: function(response){
+				if(response.respuesta == true){
+					$("#tblListado").append(response.tabla);
+				}else{
+					alert("Ocurrio un problema, intente de nuevo mas tarde");
+				}
+			},
+			error: function(xhr,ajaxOptions,thrownError){
+				
+			}
+		});
+	}
+
 	$("#btnAceptar").on("click",Aceptar);
 	$("#txtNombreUsuario").on("keypress", teclaNombreUsuario);
-	$("#btnGuardar").on("click",Guardar)
+	$("#btnGuardar").on("click",Guardar);
+	$("#btnListado").on("click", Listado);
 }
 
 
